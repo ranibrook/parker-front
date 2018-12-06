@@ -1,0 +1,103 @@
+*,
+*:before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin-top: 56px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* globals */
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+/* helpers */
+
+.line {
+    height: 1px;
+    background-color: rgb(224, 221, 221);
+    margin:10px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-content-c{
+    justify-content: center;
+}
+
+.justify-content-r{
+    justify-content: right;
+}
+
+.flex-start {
+    justify-content: flex-start
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.parking-list{
+    max-width: 100%;
+  }
+
+  .btn-map{
+      display: none;
+  }
+
+  .block{
+      display: block;
+  }
+
+  .el-message-box{
+      width: 300px;
+  }
+@media(max-width:770px){
+    .map{
+      display: none;
+    }
+}
